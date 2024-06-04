@@ -1,4 +1,4 @@
-﻿# Default values
+# Default values
 $defaultSmtpServer = "smtp.gmail.com"
 $defaultMessageSubject = "Test mail"
 $defaultMessageBody = "Message from PowerShell."
