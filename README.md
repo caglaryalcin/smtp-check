@@ -1,6 +1,8 @@
 # SMTP Check
 You can use this script for SMTP testing. 
 
+![](https://raw.githubusercontent.com/caglaryalcin/caglaryalcin/main/smtp.png)
+
 > [!IMPORTANT]  
 > Default values are set for gmail.
 
