@@ -38,7 +38,8 @@ $credentials = New-Object -TypeName System.Management.Automation.PSCredential -A
 # Sending an email
 try {
     Send-MailMessage -From $smtpFrom -To $smtpTo -Subject $messageSubject -Body $messageBody -SmtpServer $smtpServer -Credential $credentials -Port $smtpPort -UseSsl:$useSSL -ErrorAction Stop
-    Write-Host "The email was sent successfully." -ForegroundColor Green
+    Write-Host "An email was successfully sent to " -NoNewline
+    Write-Host "$smtpTo." -ForegroundColor Green
 } catch {
     Write-Host "Failed to send email. Error message: $_" -ForegroundColor Red
 }
