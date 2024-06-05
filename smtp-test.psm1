@@ -6,7 +6,7 @@ $defaultSmtpPort = 587
 $defaultUseSSLInput = "yes"
 
 # Get login information from the user, use default values
-$smtpServer = Read-Host "Enter the SMTP server address(default: $defaultSmtpServer)" 
+$smtpServer = Read-Host `n"Enter the SMTP server address(default: $defaultSmtpServer)" 
 $smtpServer = if ($smtpServer) { $smtpServer } else { $defaultSmtpServer }
 
 $smtpFrom = Read-Host "Enter the sender email address" 
